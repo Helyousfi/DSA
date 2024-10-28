@@ -7,7 +7,7 @@ struct Node {
     Node* next;       // Pointer to the next node
 };
 
-// Function to insert a node at the beginning of the linked list
+// Function to insert a node at the beginning, Node*& head is a reference to a pointer! (alias)
 void insertAtBeginning(Node*& head, int newData) {
     Node* newNode = new Node();  // Allocate new node
     newNode->data = newData;     // Put in the data
